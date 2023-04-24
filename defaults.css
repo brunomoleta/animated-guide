@@ -1,0 +1,73 @@
+
+/* - Weights: 300, 400, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --primary-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --main-bg: hsl(217, 54%, 11%);
+    --blue-card: hsl(216, 50%, 16%);
+    --blue-line: hsl(215, 32%, 27%);
+}
+
+
+html {
+    font-size: 62.5%;
+    background-color: var(--main-bg);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    background-color: var(--blue-card);
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h1,
+.author{
+    color: var(--white);
+}
+
+.credits,
+.time {
+    font-weight: 400;
+}
+
+#cost{
+    color: var(--primary-cyan);
+    font-weight: 600;
+}
+
+hr{
+    color: var(--blue-line);
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    color: var(--primary-blue);
+}
+
+
+
+.attribution { 
+    font-size: 1.1rem;
+    text-align: center; 
+    color: var(--primary-blue);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    color: var(--primary-cyan);
+}
