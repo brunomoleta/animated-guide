@@ -1,6 +1,10 @@
+# Project Title
+
+A brief description of what this project does and who it's for:
+
 # Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,7 +18,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -29,8 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./images/screenshot.jpg)
-
+![](./images/screenshot.jpg)
 
 ### Links
 
@@ -45,19 +47,14 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-
 ### What I learned
 
-This challenge was the first time in which I separated the css in different files making it more organized. 
+This challenge was the first time I separated the css in different files making it more organized.
 Building the static card was straightforward with Flexbox.
 The difficult part was to make interactive elements change all at once.
-To accomplish the task I used:
+To accomplish the task I put
+all the elements are linked to the hover of the card (.container), so when this element is hovered everything especified interacts.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
 .container:hover > #overlay > .img-nft {
   opacity: 0.5;
@@ -65,12 +62,11 @@ To see how you can add code snippets, see below:
 }
 
 .container:hover > #overlay > .img-nft > #view {
-    opacity: 1;
+  opacity: 1;
 }
 
-
 .container:hover > #overlay > .img-nft > #view,
-.container:hover > #overlay > .img-nft{
+.container:hover > #overlay > .img-nft {
   transition: opacity 500ms;
 }
 
@@ -79,22 +75,49 @@ To see how you can add code snippets, see below:
   color: var(--primary-cyan);
 }
 ```
-All the elements are linked to the hover of the card (.container), so when this element is hovered everything especified interacts.
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+The takeaway from the HTML is where the the 'eye' icon which only appears when the card is hovered is located. Inside the #view.
+Its also worth noticing the presence of <hr> that has a semantical meaning of separating content.
+
+```html
+    <main>
+      <section>
+        <div>
+          <figure>
+            <div id="view">
+              <img src="./images/icon-view.svg">
+            </div>
+            <img/>
+          </figure>
+        </div>
+        <h1></h1>
+        <p>
+        <p>
+          <span>
+            <img>
+          </span>
+          <time>
+            <img>
+          </time>
+        </p>
+        <hr/>
+        <div>
+          <figure>
+            <img/>
+          </figure>
+          <p>
+            <strong>
+
+          </p>
+        </div>
+      </section>
+    </main>
+
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Attention to dynamic elements in CSS.
 
 ### Useful resources
 
@@ -103,5 +126,5 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Bruno Moleta Santos](https://www.linkedin.com/in/bruno-moleta-santos/)
 - Frontend Mentor - [@brunomoleta](https://www.frontendmentor.io/profile/brunomoleta)
