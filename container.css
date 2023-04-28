@@ -54,10 +54,41 @@ img,
   gap: 1.6rem;
 }
 
-#cost::before {
-  content: url(./images/icon-ethereum.svg);
+#cost, time {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
 }
 
-#time::before {
-  content: url(./images/icon-clock.svg);
+footer {
+  display: inline-flex;
+  gap: .25rem;
 }
+
+@media (width < 37.5rem){
+  .container {
+    width: 28rem;
+    height: 50rem;
+    padding: 1.6rem;
+
+  }
+  .img-nft,
+h1,
+hr {
+  margin-bottom: .8rem;
+}
+footer {
+  display: block;
+  gap: .25rem;
+}
+
+}
+
+/* 
+.container {
+  height: 60rem;
+  width: 35rem;
+  padding: 2.4rem;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+} */
