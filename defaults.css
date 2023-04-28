@@ -67,7 +67,3 @@ p {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
 }
-
-.attribution a:hover{
-    color: var(--primary-cyan);
-}
