@@ -23,12 +23,12 @@ transition: opacity 500ms;
   background-color: var(--primary-cyan);
 }
 
-.container:hover > h1,
+.container:hover > .card-name,
 .container:hover > .credits > p > .author {
   color: var(--primary-cyan);
 }
 
-h1, .author, .attribution a {
+.card-name, .author, .attribution a {
   transition: color 500ms;
 }
 

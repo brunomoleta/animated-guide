@@ -26,11 +26,11 @@ body {
     background-color: var(--blue-card);
 }
 
-h1 {
+.card-name {
     font-size: 2.2rem;
 }
 
-h1,
+.card-name,
 .author{
     color: var(--white);
 }
@@ -56,7 +56,17 @@ p {
     color: var(--primary-blue);
 }
 
-
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 
 .attribution { 
     font-size: 1.1rem;

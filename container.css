@@ -13,7 +13,6 @@ body {
   border-radius: 1.5rem;
 }
 
-
 .img-nft {
   max-width: 100%;
   position: relative;
@@ -21,7 +20,7 @@ body {
 }
 
 .img-nft,
-h1,
+.card-name,
 hr {
   margin-bottom: 1.6rem;
 }
@@ -54,41 +53,31 @@ img,
   gap: 1.6rem;
 }
 
-#cost, time {
+#cost,
+time {
   display: flex;
   align-items: center;
-  gap: .65rem;
+  gap: 0.65rem;
 }
 
 footer {
   display: inline-flex;
-  gap: .25rem;
+  gap: 0.25rem;
 }
 
-@media (width < 37.5rem){
+@media (width < 37.5rem) {
   .container {
     width: 28rem;
     height: 50rem;
     padding: 1.6rem;
-
   }
   .img-nft,
-h1,
-hr {
-  margin-bottom: .8rem;
+  .card-name,
+  hr {
+    margin-bottom: 0.8rem;
+  }
+  footer {
+    display: block;
+    gap: 0.25rem;
+  }
 }
-footer {
-  display: block;
-  gap: .25rem;
-}
-
-}
-
-/* 
-.container {
-  height: 60rem;
-  width: 35rem;
-  padding: 2.4rem;
-  margin-bottom: 1rem;
-  border-radius: 1.5rem;
-} */
